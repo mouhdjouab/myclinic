@@ -9,8 +9,8 @@ import json
 
 # with open('/config.json') as c:
 #   params = json.load(c)["params"]
-params = {"gmail-user": "mouh.bw@gmail",
-          "gmail-password": "mouh15900"}
+params = {"gmail-user": "youremail",
+          "gmail-password": "youremailpassword"}
 
 # MY db connection
 local_server = True
@@ -40,7 +40,7 @@ def load_user(user_id):
 
 
 # app.config['SQLALCHEMY_DATABASE_URL']='mysql://username:password@localhost/databas_table_name'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql:///root@localhost/myclinic.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root@localhost/yourdata'
 db = SQLAlchemy(app)
 
 
